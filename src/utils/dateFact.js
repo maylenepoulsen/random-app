@@ -16,11 +16,12 @@ const dateFact = ((callback) => {
   }
 
   request(options, (error, { body }) => {
-    if (error) {
+    
+    if (error === null) {
         callback('Unable to connect to the Numbers api', undefined)
     } else {
         callback(undefined, {
-          fact: body.text     
+          fact: body.text   
         })
     }   
   })

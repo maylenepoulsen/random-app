@@ -31,11 +31,12 @@ app.get('/date', (req, res) => {
 app.get('/datefact', (req, res) => {
   dateFact((error, result) => {
     if (error) {
-      return res.send( { error })
-    }
-
+      return res.send( { fact: error })
+    } 
+    
     let dateFact = Object.assign({}, result)
     res.send(dateFact);
+    
   })
 })
 
