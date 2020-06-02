@@ -25,7 +25,7 @@ const renderData = (result) => {
   const container = document.querySelector('.content')
   const name = document.querySelector('.name')
   container.innerText = result.quote;
-  name.innerText = result.name;
+  name.innerText = `-- ${result.name}`;
 }  
 
 const fetchDate = () => {

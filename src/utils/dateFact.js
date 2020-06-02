@@ -6,7 +6,7 @@ const dateFact = ((callback) => {
   let date =  dateFormat(now, 'm') + '/' + dateFormat(now, 'd');
 
   const url = `http://numbersapi.com/${date}/date`
-
+  
   const options = {
       url,
       headers: {
@@ -21,7 +21,7 @@ const dateFact = ((callback) => {
         callback('Unable to connect to the Numbers api', undefined)
     } else {
         callback(undefined, {
-          fact: body.text   
+          fact: body.text  
         })
     }   
   })

@@ -22,18 +22,52 @@ h1 {
 
 .container {
     display: flex;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
 .container div {
-    border: 1px solid #e0e0e0;
     padding: 10px;
 }
 
 .box {
   flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
-    
+  padding: 20px 50px;
+  font-size: 100%;
+  letter-spacing: 1px; 
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-transform: uppercase; 
+  border: 1px solid #6a7b4e;
+  border-radius: 75px;
+  background-color: #6a7b4e;
+  color: #fff;
+  cursor: pointer; 
+  outline: none;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: #506134;
+  border: 1px solid #506134;
+}
+
+p {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  line-height: 145%;
+  font-size: 120%;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+p .name {
+  font-weight: 200;
 }
