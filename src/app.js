@@ -13,7 +13,7 @@ app.use(express.static(publicDirectoryPath));
 app.get('/quotes', (req, res) => {
     quotes((error, result) => {
       if (error) {
-        return res.send( { error })    
+        return res.send( { quote: error, name: 'unknown author' })    
       }
        
       res.send(result)
